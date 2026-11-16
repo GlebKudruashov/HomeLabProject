@@ -1,2 +1,4 @@
 **/.env
 **/vw-data/
+**/data/
+**/letsencrypt/

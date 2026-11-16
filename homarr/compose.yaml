@@ -4,10 +4,8 @@ services:
     container_name: homarr
     restart: unless-stopped
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - ./configs:/app/data/configs
-      - ./icons:/app/public/icons
       - ./data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
     networks:
       - homelab_net
 
