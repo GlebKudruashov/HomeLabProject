@@ -1,0 +1,1 @@
+2026/11/16 11:20:30 [warn] 173#173: *159 an upstream response is buffered to a temporary file /var/cache/nginx/proxy_temp/1/00/0000000001 while reading upstream, client: 192.168.31.179, server: homelab.npm, request: "GET /css/main.css?v=2.11.3 HTTP/1.1", upstream: "http://172.18.0.3:81/css/main.css?v=2.11.3", host: "homelab.npm", referrer: "https://homelab.npm/login"
