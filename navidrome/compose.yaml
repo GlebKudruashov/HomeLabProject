@@ -1,0 +1,17 @@
+services:
+  navidrome:
+    image: deluan/navidrome:latest
+    container_name: navidrome
+    environment:
+      ND_SCANSCHEDULE: 1h
+      ND_LOGLEVEL: info
+    volumes:
+      - /srv/music:/music:ro
+      - ./data:/data
+    restart: unless-stopped
+    networks:
+      - homelab_net
+
+networks:
+  homelab_net:
+    external: true

@@ -1,0 +1,12 @@
+services:
+  samba:
+    image: dockurr/samba
+    container_name: samba
+    env_file:
+      - .env
+    volumes:
+      - /srv/media:/storage
+    restart: unless-stopped
+    ports:
+      - 139:139
+      - 445:445

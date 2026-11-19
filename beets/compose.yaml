@@ -1,0 +1,16 @@
+services:
+  beets:
+    image: lscr.io/linuxserver/beets:latest
+    container_name: beets
+    env_file:
+      - .env
+    volumes:
+      - ./config:/config
+      - /srv/media/music:/music
+      - /srv/media/inbox:/downloads
+    restart: unless-stopped
+    networks:
+      - homelab_net
+networks:
+  homelab_net:
+      external: true

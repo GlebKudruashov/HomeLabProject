@@ -6,3 +6,6 @@ syntching/sync/
 syntching/config/
 netbird/netbird-client/
 pi-hole/etc-pihole/
+copyparty/cfg/
+beets/config/
+pi-hole/etc-dnsmasq.d/
