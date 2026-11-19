@@ -2,3 +2,7 @@
 **/vw-data/
 **/data/
 **/letsencrypt/
+syntching/sync/
+syntching/config/
+netbird/netbird-client/
+pi-hole/etc-pihole/
