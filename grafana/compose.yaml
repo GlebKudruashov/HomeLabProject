@@ -1,0 +1,14 @@
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    restart: unless-stopped
+    networks:
+      - homelab_net
+    env_file:
+      - .env
+    volumes:
+      - ./data:/var/lib/grafana
+networks:
+  homelab_net:
+    external: true

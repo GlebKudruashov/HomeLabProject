@@ -1,0 +1,16 @@
+services:
+  tagr:
+    image: ghcr.io/suitux/tagr:latest
+    container_name: tagr
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+      - /srv/media/music:/meaid/music
+
+    networks:
+      - homelab_net
+networks:
+  homelab_net:
+      external: true

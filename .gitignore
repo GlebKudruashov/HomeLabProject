@@ -9,3 +9,8 @@ pi-hole/etc-pihole/
 copyparty/cfg/
 beets/config/
 pi-hole/etc-dnsmasq.d/
+*.pem
+*.key
+*.crt
+*.p12
+
